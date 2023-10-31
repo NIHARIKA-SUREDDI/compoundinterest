@@ -140,19 +140,11 @@ function CompoundInterest() {
 
 
           <div className="sample">
-<<<<<<< HEAD
             <p><span>Compounding Frequency</span>
 
 
 
               <select style={{ border: 'none', padding: '.1rem' }} onChange={(e) => handleOption(Number(e.target.value),)}>
-=======
-            <p><span>compounding frequency</span>
-             
-
-
-              <select style={{border:'none', padding:'.1rem'}}onChange={(e) => handleOption(Number(e.target.value),)}>
->>>>>>> 8c4aa5d234d0142565d3247746cb861bf841db4d
                 <option value="1">Yearly</option>
                 <option value="2">Half_Yearly</option>
                 <option value="4">Quarterly</option>

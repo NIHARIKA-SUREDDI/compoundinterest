@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/compoundinterest.css";
 import Slider, { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -41,12 +41,12 @@ function CompoundInterest() {
   const handleOption = (compoundFrequency, selectedOption) => {
     setSelectedOption(selectedOption);
     setCompoundFrequency(compoundFrequency);
-  }
+  };
 
 
   return (
     <div className="container">
-      <h1>compound Interest Calculator</h1>
+      <h1>Compound Interest Calculator</h1>
       <div style={{ display: 'flex' }}>
         <div style={{ border: '1px solid', borderRadius: '.5rem', padding: '10px' }}>
           <div className="container-form">
@@ -140,11 +140,19 @@ function CompoundInterest() {
 
 
           <div className="sample">
+<<<<<<< HEAD
             <p><span>Compounding Frequency</span>
 
 
 
               <select style={{ border: 'none', padding: '.1rem' }} onChange={(e) => handleOption(Number(e.target.value),)}>
+=======
+            <p><span>compounding frequency</span>
+             
+
+
+              <select style={{border:'none', padding:'.1rem'}}onChange={(e) => handleOption(Number(e.target.value),)}>
+>>>>>>> 8c4aa5d234d0142565d3247746cb861bf841db4d
                 <option value="1">Yearly</option>
                 <option value="2">Half_Yearly</option>
                 <option value="4">Quarterly</option>

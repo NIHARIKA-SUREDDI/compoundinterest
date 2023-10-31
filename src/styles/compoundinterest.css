@@ -18,10 +18,16 @@
     padding: 1.5rem;
     gap: 1rem;
     border-radius: .5rem;
+<<<<<<< HEAD
     padding-bottom: 3rem; 
+=======
+    padding-bottom: 1rem;
+    
+>>>>>>> 8c4aa5d234d0142565d3247746cb861bf841db4d
 }
 .container h1{
     text-align: left;
+    font-size: 1.8rem;
 }
 
 
@@ -70,6 +76,7 @@
     display: flex;
     justify-content: space-between;
   }
+<<<<<<< HEAD
  .circle p{
     height: 5vh;
  }
@@ -79,3 +86,6 @@
     align-items: center;
 
  }
+=======
+  
+>>>>>>> 8c4aa5d234d0142565d3247746cb861bf841db4d

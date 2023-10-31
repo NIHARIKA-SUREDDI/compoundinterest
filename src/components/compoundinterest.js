@@ -3,7 +3,7 @@ import "../styles/compoundinterest.css";
 import Slider, { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { Chart } from "react-google-charts";
- 
+
 
 
 function CompoundInterest() {
@@ -50,8 +50,8 @@ function CompoundInterest() {
       <div style={{ display: 'flex' }}>
         <div style={{ border: '1px solid', borderRadius: '.5rem', padding: '10px' }}>
           <div className="container-form">
-            <div class="circle">
-              <span>
+            <div className="circle">
+              <span className="interest-fields">
                 <p>Principal Amount</p>
 
                 <div className="container-form-input">
@@ -82,8 +82,8 @@ function CompoundInterest() {
               />
 
             </div>
-            <div class="title">
-              <span>
+            <div className="title">
+              <span className="interest-fields">
                 <p>Rate of Interest(p.a)</p>
 
                 <div className="container-form-input">
@@ -110,8 +110,8 @@ function CompoundInterest() {
                 }}
               />
             </div>
-            <div class="box">
-              <span>
+            <div className="box">
+              <span className="interest-fields">
                 <p>Timeperiod</p>
                 <div className="container-form-input">
                   <input
@@ -140,11 +140,11 @@ function CompoundInterest() {
 
 
           <div className="sample">
-            <p><span>compoundingFrequency</span>
-             
+            <p><span>Compounding Frequency</span>
 
 
-              <select onChange={(e) => handleOption(Number(e.target.value),)}>
+
+              <select style={{ border: 'none', padding: '.1rem' }} onChange={(e) => handleOption(Number(e.target.value),)}>
                 <option value="1">Yearly</option>
                 <option value="2">Half_Yearly</option>
                 <option value="4">Quarterly</option>
@@ -153,7 +153,7 @@ function CompoundInterest() {
 
 
             <p><span>Principal amount </span><span>₹{principal.toLocaleString("en-In")}</span></p>
-            
+
             <p><span>Total Interest </span><span>₹{Math.round(interest).toLocaleString("en-IN")}</span></p>
             <p><span>Total amount </span><span>₹{Math.round(totalAmount).toLocaleString("en-IN")}</span></p>
 

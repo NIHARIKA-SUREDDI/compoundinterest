@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    
+    border: 100px;
 }
 
 .container-form {
@@ -18,8 +18,7 @@
     padding: 1.5rem;
     gap: 1rem;
     border-radius: .5rem;
-    padding-bottom: 3rem;
-    
+    padding-bottom: 3rem; 
 }
 .container h1{
     text-align: left;
@@ -40,8 +39,12 @@
     /* border: none; */
     color: #049974;
     padding: .1rem .8rem;
-   
+    
 }
+.container-form-input span {
+    margin-right: 5px;
+}
+
 
 .container-form-input input {
     width: 90%;
@@ -50,6 +53,7 @@
     text-align: end;
     background-color: #66e3c4;
     color: #049974;
+    
 
 
 }
@@ -66,5 +70,12 @@
     display: flex;
     justify-content: space-between;
   }
- 
-  
+ .circle p{
+    height: 5vh;
+ }
+
+ .interest-fields {
+    display: flex;
+    align-items: center;
+
+ }

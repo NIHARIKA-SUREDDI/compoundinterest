@@ -16,6 +16,11 @@ function CompoundInterest() {
   const [compoundFrequency, setCompoundFrequency] = useState(null);
   const [selectedOption, setSelectedOption] = useState('Yearly');
 
+  useEffect(() => {
+    setCompoundFrequency(1); 
+    setSelectedOption('Yearly'); 
+  }, []);
+
   const CompoundInterest = principal * Math.pow((1 + (Rateofinterest / 100) / compoundFrequency), (compoundFrequency * Timeperiod));
 
   const interest = CompoundInterest - principal;
@@ -34,10 +39,7 @@ function CompoundInterest() {
     title: "compound Interest Piechart",
     is3D: true,
   };
-  // function handleprincipal(val){
-  //   setPrincipal(val)
-  // }
-
+  
   const handleOption = (compoundFrequency, selectedOption) => {
     setSelectedOption(selectedOption);
     setCompoundFrequency(compoundFrequency);
